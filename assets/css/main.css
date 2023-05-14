@@ -503,14 +503,14 @@ news-list body{
  }
 
 .heading09 {
-	font-size: 19.5px;
+	font-size: 19px;
 }
 
 .heading09::before {
 	content: attr(data-en);
 	display: block;
 	color: #498ee0;
-	font-size: 17.5px;
+	font-size: 17px;
 }
 
 .heading09::after {
@@ -529,17 +529,17 @@ news-list body{
 
 .newsday {
   text-align:right;
-  font-size: 16.5px;
+  font-size: 16px;
   line-height: 1.7;
   }
 
 .newstext {
-  font-size: 15.5px;
+  font-size: 15px;
   line-height: 1.9;
 }
 
 .newstext1 {
-  font-size: 16.5px;
+  font-size: 16px;
   line-height: 1.9;
   text-align:right;
 }
