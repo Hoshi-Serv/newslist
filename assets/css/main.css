@@ -1,0 +1,574 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  margin-top: 60px;
+  font-family: sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.header {
+  height: 60px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 5px;
+  background-color: rgb(49, 36, 107);
+  position: fixed;
+  top: 0;
+  z-index: 300000;
+  display: flex;
+}
+
+.logo {
+  font-size: 23px;
+}
+
+nav {
+  margin: 0 0 0 auto;
+}
+
+.ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ul1 {
+  padding-left: 0px;
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+.hun {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  line-height: 60px;
+  margin: auto;
+  border-top: solid 0.5px rgb(255, 255, 255);
+}
+
+.hun-sub {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  line-height: 60px;
+  margin: auto;
+  border-top: solid 0.5px rgb(255, 255, 255);
+  border-bottom: solid 0.5px rgb(255, 255, 255);
+}
+
+.hun2 {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  line-height: 60px;
+  margin: auto;
+}
+
+.sm {
+  display: none;
+}
+
+
+/**********************************　
+以下、ハンバーガーメニューの設定　
+************************************/
+
+@media (max-width: 900px) {
+
+  .pc {
+    display: none;
+  }
+
+  #hamburger {
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    margin: 0 0 0 auto;
+    height: 60px;
+    width: 60px;
+  }
+
+  .icon span {
+    position: absolute;
+    left: 15px;
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 8px;
+    transition: ease 0.75s;
+  }
+
+  .icon span:nth-of-type(1) {
+    top: 16px;
+  }
+  .icon span:nth-of-type(2) {
+    top: 28px;
+  }
+  .icon span:nth-of-type(3) {
+    bottom: 16px;
+  }
+
+  .close span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 28px;
+  }
+
+  .close span:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  .close span:nth-of-type(3) {
+      transform: rotate(-45deg);
+      top: 28px;
+  }
+
+  .sm {
+      top: 60px;
+      left: 0px;
+      position: absolute;
+      z-index: 300000;
+      width: 100%;
+      background-color: rgba(34, 49, 52, 0.9);
+  }
+
+  ul {
+    flex-direction: column;
+  }
+
+  .hun a {
+    border-top: solid 0.5px rgba(255, 255, 255, 0);
+  }
+}
+
+
+.honbun {
+  padding: 5px;
+  padding-left: 10%;
+  padding-right: 10%;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.news {
+  padding: 5px;
+}
+
+.link1 a:link {
+  color:#0000cd;
+}
+
+.link1 a:visited {
+  color:#0000cd;
+}
+
+.link1 a:hover {
+  color:#0000cd;
+}
+
+.link1 a:active {
+  color:#0000cd;
+}
+
+.footer a:link {
+  color:#ffffff;
+}
+
+.footer a:visited {
+  color:#ffffff;
+}
+
+.footer a:hover {
+  color:#ffffff;
+}
+
+.footer a:active {
+  color:#ffffff;
+}
+
+.link2 a:link {
+  color:#000000;
+}
+
+.link2 a:visited {
+  color:#000000;
+}
+
+.link2 a:hover {
+  color:#000000;
+}
+
+.linnk2 a:active {
+  color:#000000;
+}
+
+.fqa a:link {
+  color:#006400;
+}
+
+.fqa a:visited {
+  color:#006400;
+}
+
+.fqa a:hover {
+  color:#006400;
+}
+
+.fqa a:active {
+  color:#006400;
+}
+
+#footer {
+  padding-bottom: 6px;
+  padding-top: 6px;
+  background-color: #2f2f2f;
+  color: #ffffff;
+}
+
+#footer ul {
+  padding-left: 0px;
+  text-align: center;
+}
+
+#footer ul li {
+  padding: 0 4px;
+  display: inline;
+}
+
+
+#footer p {
+  text-align: center;
+  font-size: 15px
+}
+
+.news-list{
+  list-style: none outside;
+  margin: 0;
+  padding: 0;
+}
+.news-list .item a{
+  display: flex;
+  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid #CCC;
+  padding: 20px 20px;
+}
+.news-list .item:first-child a{
+  border-top: 1px solid #CCC;
+}
+.news-list .item .date{
+  margin: 0;
+  min-width: 120px;
+  font-size: 16px;
+  color: #999;
+  padding: 0 20px 0 0;
+}
+.news-list .item .title{
+  margin: 0;
+  width: 100%;
+}
+.news-list .item a:hover .title{
+  color: #00F;
+}
+
+@media screen and (max-width: 767px){
+.news-list .item a{
+  flex-wrap: wrap;
+}
+.news-list .item .date{
+  min-width: 100px;
+}
+.news-list .item .title{
+  margin-top: 10px;
+}
+}
+
+/* 装飾 */
+ 
+*{
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+news-list body{
+  margin: 20px;
+}
+
+#hoge {
+  display: inline-block;
+}
+
+#itiran {
+    margin: 0 0 0 auto;
+}
+
+@media (max-width: 900px) {
+
+  .honbun {
+    padding: 10px;
+    margin: auto;
+  }
+  
+  h3 {
+    font-size: 16.5px; 
+  }
+  
+  h4 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  p {
+    font-size: 15px;
+  }
+
+}
+
+.mds1 {
+  color: #364e96;/*文字色*/
+  padding: 0.5em 0;/*上下の余白*/
+  border-top: solid 3px #364e96;/*上線*/
+  border-bottom: solid 3px #364e96;/*下線*/
+}
+
+.cp_qa *, .cp_qa *:after, .cp_qa *:before {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.cp_qa {
+	border-top: 1px solid #1b2538;
+}
+.cp_qa .cp_actab {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	margin-bottom: 1px;
+	color: #1b2538;
+}
+.cp_qa .cp_actab input {
+	position: absolute;
+	opacity: 0;
+}
+/* 質問 */
+.cp_qa .cp_actab label {
+	font-weight: bold;
+	line-height: 1.6;
+	position: relative;
+	display: block;
+	margin: 0 0 0 0;
+	padding: 1em 2em 1em 1em;
+	cursor: pointer;
+	border-bottom: 1px solid #1b2538;
+}
+.cp_qa .cp_actab label:hover {
+	color: #00838F;
+}
+/* 答え */
+.cp_qa .cp_actab .cp_actab-content {
+	overflow: hidden;
+	max-height: 0;
+	-webkit-transition: max-height 0.5s ease;
+	        transition: max-height 0.5s ease;
+	color: #ffffff;
+	background: rgba(0, 131, 143, 0.5);
+}
+.cp_qa .cp_actab .cp_actab-content p {
+	margin: 1em;
+}
+/* 質問を開いた時の仕様 */
+/* --アイコン */
+.cp_qa .cp_actab input:checked ~ label {
+	color: #00838F;
+}
+/* --答えの高さ */
+.cp_qa .cp_actab input:checked ~ .cp_actab-content {
+	max-height: 40em;
+}
+/* 質問をクリックした時のアイコンの動き */
+.cp_qa .cp_actab label::after {
+	line-height: 1.6;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	display: block;
+	width: 3em;
+	margin-top: -12.5px;
+	-webkit-transition: all 0.5s ease;
+	        transition: all 0.5s ease;
+	text-align: center;
+}
+.cp_qa .cp_actab input[type=checkbox] + label::after {
+	content: '▲';
+}
+.cp_qa .cp_actab input[type=checkbox]:checked + label::after {
+	-webkit-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+}
+
+.kakomi-box14 {
+  position: relative;
+  padding: 1.2em;
+  width: 100%;
+  color: #000000; /* 文字色 */
+  background-color: #fff;
+  border: 6px double #116094; /* 枠線の太さ・色 */
+  box-shadow: 2px 2px 2px #ccc;/* 影の色 */
+  font-weight: 600;
+ }
+
+ .title-box14 {
+  position: absolute;
+  padding: 0 .5em;
+  left: 20px;
+  top: -15px;
+  font-weight: bold;
+  background-color:  #fff; /* タイトル背景色 */
+  color: #CC0033; /* タイトル文字色 */
+  font-size: larger;
+  font-weight: 600;
+ }
+
+.button01 a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  width: 200px;
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #cccccc;
+  transition: 0.3s;
+}
+
+.button01 a::after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-top: 3px solid #333333;
+  border-right: 3px solid #333333;
+  transform: rotate(45deg);
+}
+
+.button01 a:hover {
+  text-decoration: none;
+  background-color: #bbbbbb;
+}
+
+.kaisha {
+  width: 100%;
+}
+  
+.kaisha td {
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+  
+ .kaisha th {
+  font-weight: bold;
+  background-color: #dedede; 
+  border: 1px solid #ccc;
+  padding: 15px;
+  width: 150px;
+}
+
+ .kaisha tbody {
+  width: 100%;
+ }
+  
+  @media screen and (max-width: 900px) {
+  .kaisha tr,
+  .kaisha td,
+  .kaisha th {display:block;}
+  .kaisha th {width:auto;}
+  .kaisha th {text-align: left;}
+ }
+
+.heading09 {
+	font-size: 22px;
+}
+
+.heading09::before {
+	content: attr(data-en);
+	display: block;
+	color: #498ee0;
+	font-size: 18px;
+}
+
+.heading09::after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: #498ee0;
+}
+
+/*実線*/
+.box1 {
+  padding:0.5em;/*内側余白*/
+  border:solid 2px #A5A19A;/*線の種類・太さ・色*/
+  }
+
+.newsday {
+  text-align:right;
+  font-size: 18px;
+  line-height: 1.7;
+  }
+
+.newstext {
+  font-size: 17px;
+  line-height: 1.9;
+}
+
+.newstext1 {
+  font-size: 17px;
+  line-height: 1.9;
+  text-align:right;
+}
+
+
+.linkload {
+  padding-bottom: 6px;
+  padding-top: 6px;
+  background-color: #9f9f9f;
+  color: #ffffff;
+  text-align: center;
+}
+
+.linkload p {
+  font-size: 15px;
+}
+
+.linkload a:link {
+  color:#ffffff;
+}
+
+.linkload a:visited {
+  color:#ffffff;
+}
+
+.linkload a:hover {
+  color:#ffffff;
+}
+
+.linkload a:active {
+  color:#ffffff;
+}
