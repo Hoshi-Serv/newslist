@@ -555,6 +555,8 @@ news-list body{
 
 .linkload p {
   font-size: 15px;
+　padding-left:5px;
+  padding-right:5px;
 }
 
 .linkload a:link {
